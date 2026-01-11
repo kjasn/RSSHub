@@ -197,8 +197,8 @@ importers:
         specifier: 1.5.1
         version: 1.5.1
       otplib:
-        specifier: 12.0.1
-        version: 12.0.1
+        specifier: 13.0.1
+        version: 13.0.1
       p-map:
         specifier: 7.0.4
         version: 7.0.4
@@ -2119,20 +2119,23 @@ packages:
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
 
-  '@otplib/core@12.0.1':
-    resolution: {integrity: sha512-4sGntwbA/AC+SbPhbsziRiD+jNDdIzsZ3JUyfZwjtKyc/wufl1pnSIaG4Uqx8ymPagujub0o92kgBnB89cuAMA==}
+  '@otplib/core@13.0.1':
+    resolution: {integrity: sha512-K3E2TKmDs84jhKWQOQc5HXDhOrkdCogQx+8a29Jf9PPxtev9R0MGv8LdlPKHbXzfZmO3wIDjn0wBrBjtzPnG9w==}
 
-  '@otplib/plugin-crypto@12.0.1':
-    resolution: {integrity: sha512-qPuhN3QrT7ZZLcLCyKOSNhuijUi9G5guMRVrxq63r9YNOxxQjPm59gVxLM+7xGnHnM6cimY57tuKsjK7y9LM1g==}
+  '@otplib/hotp@13.0.1':
+    resolution: {integrity: sha512-7Hc0KEqvuVyZNTdYOSN6fIsbMGGHRplGkvyTUvAFZuhVYVyFkkKxq3dwKn3inSGIJ/Tz0sqO/ImQMxIdfRuvmw==}
 
-  '@otplib/plugin-thirty-two@12.0.1':
-    resolution: {integrity: sha512-MtT+uqRso909UkbrrYpJ6XFjj9D+x2Py7KjTO9JDPhL0bJUYVu5kFP4TFZW4NFAywrAtFRxOVY261u0qwb93gA==}
+  '@otplib/plugin-base32-scure@13.0.1':
+    resolution: {integrity: sha512-gp/wWyWg9aw81QrvJTPID7+VGei4byTbidLg8hvSkC6TADQei3xByqCgbxzIv3jZsE510e3jLxXD6+F4A4ZG8g==}
 
-  '@otplib/preset-default@12.0.1':
-    resolution: {integrity: sha512-xf1v9oOJRyXfluBhMdpOkr+bsE+Irt+0D5uHtvg6x1eosfmHCsCC6ej/m7FXiWqdo0+ZUI6xSKDhJwc8yfiOPQ==}
+  '@otplib/plugin-crypto-noble@13.0.1':
+    resolution: {integrity: sha512-Jv2ggK5N8o8sOGxG/sSn4eCwj/dvIjlNaIRNibWeRAY6g/KOMWK+D+NT6YyZp93zH7u1EmR8pBIRh0lUBGII8w==}
 
-  '@otplib/preset-v11@12.0.1':
-    resolution: {integrity: sha512-9hSetMI7ECqbFiKICrNa4w70deTUfArtwXykPUvSHWOdzOlfa9ajglu7mNCntlvxycTiOAXkQGwjQCzzDEMRMg==}
+  '@otplib/totp@13.0.1':
+    resolution: {integrity: sha512-17t2qhM7f2PAEhfwo7RI7cLG2ANN1JBFHybXvnHwzlgAX2Owi/uZ9+RC9s//ns4FATX3gaQlMUgufntOs03eXg==}
+
+  '@otplib/uri@13.0.1':
+    resolution: {integrity: sha512-jxET/qEhK1XT614GmSg3bfvn/wo/E+U8kV+c/YDt+kfGayyafMrnvBJhwx701niE1yOlMFpbqN6bhVy0EiVKaA==}
 
   '@oxc-project/types@0.103.0':
     resolution: {integrity: sha512-bkiYX5kaXWwUessFRSoXFkGIQTmc6dLGdxuRTrC+h8PSnIdZyuXHHlLAeTmOue5Br/a0/a7dHH0Gca6eXn9MKg==}
@@ -2462,6 +2465,9 @@ packages:
   '@scalar/types@0.5.6':
     resolution: {integrity: sha512-yvTXYdSQPq8qmJ1zZPBRRB3RkkE2c0J3gIIMirX997yyVixrhtb0jmfM+9EZ2ZWXGx2JGLquGP10zY0nmnu75w==}
     engines: {node: '>=20'}
+
+  '@scure/base@1.2.6':
+    resolution: {integrity: sha512-g/nm5FgUa//MCj1gV09zTJTaM6KBAHqLN907YVQqf7zC49+DcO4B1so4ZX07Ef10Twr6nuqYEH9GEggFXA4Fmg==}
 
   '@sec-ant/readable-stream@0.4.1':
     resolution: {integrity: sha512-831qok9r2t8AlxLko40y2ebgSDhenenCatLVeW/uBtnHPyhHOvG0C7TvfgecV+wHzIm5KUICgzmVpWS+IMEAeg==}
@@ -5158,8 +5164,8 @@ packages:
     resolution: {integrity: sha512-bOj3L1ypm++N+n7CEbbe473A414AB7z+amKYshRb//iuL3MpdDCLhPnw6aVTdKB9g5ZRVHIEp8eUln6L2NUStg==}
     engines: {node: '>=0.4.0'}
 
-  otplib@12.0.1:
-    resolution: {integrity: sha512-xDGvUOQjop7RDgxTQ+o4pOol0/3xSZzawTiPKRrHnQWAy0WjhNs/5HdIDJCrqC4MBynmjXgULc6YfioaxZeFgg==}
+  otplib@13.0.1:
+    resolution: {integrity: sha512-YbvS7FwY2ZSzO5Zuw4vqz1eL8PvWzd+8Lgvstrc6XeD/NpAwI/EAujRs0kotlXbsAcPCMYuM3KxR+YYdOyIkyw==}
 
   outvariant@1.4.3:
     resolution: {integrity: sha512-+Sl2UErvtsoajRDKCE5/dBz4DIvHXQQnAxtQTF04OJxY0+DyZXSo5P5Bb7XYWOh81syohlYL24hbDwxedPUJCA==}
@@ -5887,10 +5893,6 @@ packages:
 
   text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
-
-  thirty-two@1.0.2:
-    resolution: {integrity: sha512-OEI0IWCe+Dw46019YLl6V10Us5bi574EvlJEOcAkB29IzQ/mYD1A6RyNHLjZPiHCmuodxvgF6U+vZO1L15lxVA==}
-    engines: {node: '>=0.2.6'}
 
   thread-stream@3.1.0:
     resolution: {integrity: sha512-OqyPZ9u96VohAyMfJykzmivOrY2wfMSf3C5TtFJVgN+Hm6aj+voFhlK+kZEIv2FBh1X6Xp3DlnCOfEQ3B2J86A==}
@@ -8317,28 +8319,32 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 2.2.0(@opentelemetry/api@1.9.0)
 
-  '@otplib/core@12.0.1': {}
+  '@otplib/core@13.0.1': {}
 
-  '@otplib/plugin-crypto@12.0.1':
+  '@otplib/hotp@13.0.1':
     dependencies:
-      '@otplib/core': 12.0.1
+      '@otplib/core': 13.0.1
+      '@otplib/uri': 13.0.1
 
-  '@otplib/plugin-thirty-two@12.0.1':
+  '@otplib/plugin-base32-scure@13.0.1':
     dependencies:
-      '@otplib/core': 12.0.1
-      thirty-two: 1.0.2
+      '@otplib/core': 13.0.1
+      '@scure/base': 1.2.6
 
-  '@otplib/preset-default@12.0.1':
+  '@otplib/plugin-crypto-noble@13.0.1':
     dependencies:
-      '@otplib/core': 12.0.1
-      '@otplib/plugin-crypto': 12.0.1
-      '@otplib/plugin-thirty-two': 12.0.1
+      '@noble/hashes': 1.8.0
+      '@otplib/core': 13.0.1
 
-  '@otplib/preset-v11@12.0.1':
+  '@otplib/totp@13.0.1':
     dependencies:
-      '@otplib/core': 12.0.1
-      '@otplib/plugin-crypto': 12.0.1
-      '@otplib/plugin-thirty-two': 12.0.1
+      '@otplib/core': 13.0.1
+      '@otplib/hotp': 13.0.1
+      '@otplib/uri': 13.0.1
+
+  '@otplib/uri@13.0.1':
+    dependencies:
+      '@otplib/core': 13.0.1
 
   '@oxc-project/types@0.103.0': {}
 
@@ -8634,6 +8640,8 @@ snapshots:
       nanoid: 5.1.5
       type-fest: 5.0.0
       zod: 4.3.5
+
+  '@scure/base@1.2.6': {}
 
   '@sec-ant/readable-stream@0.4.1': {}
 
@@ -11671,11 +11679,14 @@ snapshots:
 
   options@0.0.6: {}
 
-  otplib@12.0.1:
+  otplib@13.0.1:
     dependencies:
-      '@otplib/core': 12.0.1
-      '@otplib/preset-default': 12.0.1
-      '@otplib/preset-v11': 12.0.1
+      '@otplib/core': 13.0.1
+      '@otplib/hotp': 13.0.1
+      '@otplib/plugin-base32-scure': 13.0.1
+      '@otplib/plugin-crypto-noble': 13.0.1
+      '@otplib/totp': 13.0.1
+      '@otplib/uri': 13.0.1
 
   outvariant@1.4.3: {}
 
@@ -12559,8 +12570,6 @@ snapshots:
   text-hex@1.0.0: {}
 
   text-table@0.2.0: {}
-
-  thirty-two@1.0.2: {}
 
   thread-stream@3.1.0:
     dependencies:
