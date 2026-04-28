@@ -80,8 +80,8 @@ importers:
         specifier: 0.0.25
         version: 0.0.25
       '@scalar/hono-api-reference':
-        specifier: 0.10.9
-        version: 0.10.9(hono@4.12.14)
+        specifier: 0.10.11
+        version: 0.10.11(hono@4.12.14)
       '@sentry/node':
         specifier: 10.49.0
         version: 10.49.0(@opentelemetry/exporter-trace-otlp-http@0.215.0(@opentelemetry/api@1.9.1))
@@ -2580,22 +2580,22 @@ packages:
   '@rss3/sdk@0.0.25':
     resolution: {integrity: sha512-jyXT4YTwefxxRZ0tt5xjbnw8e7zPg2OGdo/0xb+h/7qWnMNhLtWpc95DsYs/1C/I0rIyiDpZBhLI2DieQ9y+tw==}
 
-  '@scalar/client-side-rendering@0.1.2':
-    resolution: {integrity: sha512-gX2QIc+lpErO9RWkJmt02sBZoCOjyZ7EiLLEyGj7x9UKkk7E4zj6Wbk1eUPo6i3oIwhtZ+Vybj/xzexCK2bxwA==}
+  '@scalar/client-side-rendering@0.1.4':
+    resolution: {integrity: sha512-xriPrHrKs/FNQbMJTPWiP7bIualAobbJlzrDM5Tl+7nSgKMUUgpR60IcOphCsJ+iFcdOU/VTmjufBcOaVigDPg==}
     engines: {node: '>=22'}
 
-  '@scalar/helpers@0.5.1':
-    resolution: {integrity: sha512-9VvPfv8b+YZVIFwR3SWeq4Y8ij/kU3/kf2M6NKcbf2iVyh63d8s0ssap5m/nOhiz/Puidv/29MAJlJCA0LRssA==}
+  '@scalar/helpers@0.5.3':
+    resolution: {integrity: sha512-PgQmhuV0oRoHtaqH0OhyCcSY9t35qm8ThNeuUMEAKeN+hW1ijBnJiUADpxaIfXPbLrpN9sjyYza0A16WFbLttg==}
     engines: {node: '>=22'}
 
-  '@scalar/hono-api-reference@0.10.9':
-    resolution: {integrity: sha512-XLsdXGp8ta7fjYgcwD8xyopsF5KfO5h1qJMoNTjb4Tm1giu+TEkH+m+aBS3cv5FN9LA91Uym8SLWJm8yhgkdOA==}
+  '@scalar/hono-api-reference@0.10.11':
+    resolution: {integrity: sha512-iU3VVhI5ulzwVOaF3Qxswyvd/K3/56k2/420nOSu6me3zP4OqdvA4Xt9/7vkkRu0yOxjkq68GCVVB/R/5AkLuQ==}
     engines: {node: '>=22'}
     peerDependencies:
       hono: ^4.12.5
 
-  '@scalar/types@0.9.1':
-    resolution: {integrity: sha512-3EbkhtQc+XuDE8Ur1MPosM3YTACFIFNba4M3vGulqv8jcvhMXT+KWPvGUJxq0CDvySqjGa8cE6w85v8T+MjDng==}
+  '@scalar/types@0.9.3':
+    resolution: {integrity: sha512-/cEFjVa8PxRIDyhcWKh7McT8pm5O0kbafzd1jvpVq69sgIIq0gJ0P1sCcPye6qJ2k478PK7VmpK9FxZcr6D4Kw==}
     engines: {node: '>=22'}
 
   '@scure/base@2.0.0':
@@ -5313,6 +5313,10 @@ packages:
 
   postcss@8.5.10:
     resolution: {integrity: sha512-pMMHxBOZKFU6HgAZ4eyGnwXF/EvPGGqUr0MnZ5+99485wwW41kW91A4LOGxSHhgugZmSChL5AlElNdwlNgcnLQ==}
+    engines: {node: ^10 || ^12 || >=14}
+
+  postcss@8.5.12:
+    resolution: {integrity: sha512-W62t/Se6rA0Az3DfCL0AqJwXuKwBeYg6nOaIgzP+xZ7N5BFCI7DYi1qs6ygUYT6rvfi6t9k65UMLJC+PHZpDAA==}
     engines: {node: ^10 || ^12 || >=14}
 
   postgres-array@2.0.0:
@@ -8224,20 +8228,20 @@ snapshots:
       '@rss3/api-core': 0.0.25
       '@rss3/api-utils': 0.0.25
 
-  '@scalar/client-side-rendering@0.1.2':
+  '@scalar/client-side-rendering@0.1.4':
     dependencies:
-      '@scalar/types': 0.9.1
+      '@scalar/types': 0.9.3
 
-  '@scalar/helpers@0.5.1': {}
+  '@scalar/helpers@0.5.3': {}
 
-  '@scalar/hono-api-reference@0.10.9(hono@4.12.14)':
+  '@scalar/hono-api-reference@0.10.11(hono@4.12.14)':
     dependencies:
-      '@scalar/client-side-rendering': 0.1.2
+      '@scalar/client-side-rendering': 0.1.4
       hono: 4.12.14
 
-  '@scalar/types@0.9.1':
+  '@scalar/types@0.9.3':
     dependencies:
-      '@scalar/helpers': 0.5.1
+      '@scalar/helpers': 0.5.3
       nanoid: 5.1.9
       type-fest: 5.6.0
       zod: 4.3.6
@@ -11330,6 +11334,12 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
+  postcss@8.5.12:
+    dependencies:
+      nanoid: 3.3.11
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
+
   postgres-array@2.0.0: {}
 
   postgres-bytea@1.0.1: {}
@@ -12392,7 +12402,7 @@ snapshots:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
-      postcss: 8.5.10
+      postcss: 8.5.12
       rollup: 4.60.2
       tinyglobby: 0.2.16
     optionalDependencies:
